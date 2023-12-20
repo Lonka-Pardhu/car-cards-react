@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin: 0;
+    background-color: #DDE6ED;
+}
+/* font-family: 'Anton', sans-serif; */
+.navbar{
+    height: 80px;
+    background-color: #001524;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > h1{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+.card-main-container{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: 300px;
+    background-color: #2C3333;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.card-main-container:hover {
+    transform: translateY(-10px);
+}
+.car-card{
+    height: 90%;
+    width: 90%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.car-img-container{
+    width: 100%;
+    height: auto;
+}
+.car-img-container > img{
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.car-specs-container{
+    line-height: 1;
+    letter-spacing: 0.8px
+}
+.car-specs-container > p > b{
+    font-weight: 400;
+    font-size: 16px;
+}
+.car-specs-container > p {
+    font-weight: 200;
+    font-size: 14px;
+}
+.brand-logo-container{
+    height: 100px;
+    width: auto;
+}
+.brand-logo-container > img{
+    height: 100%;
+    width: 100%;
+}
+.cars-card-root{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
 }
