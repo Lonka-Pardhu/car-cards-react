@@ -90,3 +90,16 @@ body{
     align-items: center;
     gap: 35px;
 }
+
+/* class card component
+.class-card-main-container{
+    color: white;
+    height: 150px;
+    width: 150px;
+    background-color: #2C3333;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */

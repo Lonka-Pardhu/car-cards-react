@@ -3,7 +3,7 @@ import { useState } from "react";
 function Cars(props) {
     const [cardClick, setCardClick] = useState(false);
     const cardInfo = () => {
-        setCardClick(!cardClick);
+        setCardClick(prevClick => !prevClick);
     }
     return (
         <>
