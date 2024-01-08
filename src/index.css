@@ -36,6 +36,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
@@ -103,3 +104,10 @@ body{
     align-items: center;
     justify-content: center;
 } */
+
+@media (max-width: 768px) {
+    .cars-card-root {
+        flex-direction: column;
+        align-items: center;
+    }
+}

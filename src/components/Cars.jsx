@@ -35,4 +35,3 @@ function Cars(props) {
 }
 export default Cars;
 
-// ? Todo : write this using class component>!
